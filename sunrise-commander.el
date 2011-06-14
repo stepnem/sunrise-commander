@@ -3888,6 +3888,16 @@ when any of the options -p or -F is used with ls."
 (add-hook 'sr-init-hook 'sr-fix-listing-switches)
 
 ;;; ============================================================================
+;;; Advice
+(defun sr-unload-advice (regexp)
+  "Disable advice matching REGEXP and update affected function definitions."
+  (ad-disable-regexp regexp)
+  (ad-update-regexp regexp))
+
+(defun sunrise-commander-unload-function ()
+  (sr-unload-advice "^sr-advice-"))
+
+;;; ============================================================================
 ;;; Font-Lock colors & styles:
 
 (defmacro sr-rainbow (symbol spec regexp)
