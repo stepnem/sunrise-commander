@@ -1,4 +1,4 @@
-;;; sunrise-x-mirror.el --- Full read/write access to compressed archives for the Sunrise Commander File Manager.
+;;; sunrise-x-mirror.el --- full read/write access to compressed archives for the Sunrise Commander File Manager
 
 ;; Copyright (C) 2008-2011 José Alfredo Romero Latouche.
 
@@ -560,4 +560,4 @@ so they are always writeable by default."
 
 ;;;###autoload (require 'sunrise-x-mirror)
 
-;;; sunrise-x-mirror.el ends here.
+;;; sunrise-x-mirror.el ends here
