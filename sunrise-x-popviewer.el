@@ -146,7 +146,7 @@ passive pane."
 
 (defun sunrise-x-popviewer-unload-function ()
   (sr-popviewer-mode -1)
-  (sr-unload-advice "^sr-popviewer-"))
+  (sr-ad-disable "^sr-popviewer-"))
 
 (provide 'sunrise-x-popviewer)
 

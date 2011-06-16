@@ -123,7 +123,7 @@
 (ad-activate 'bookmark-relocate)
 
 (defun sunrise-x-checkpoints-unload-function ()
-  (sr-unload-advice "^sr-checkpoint-"))
+  (sr-ad-disable "^sr-checkpoint-"))
 
 (provide 'sunrise-x-checkpoints)
 

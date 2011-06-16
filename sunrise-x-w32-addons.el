@@ -266,7 +266,7 @@ End Function")
     script-path))
 
 (defun sunrise-x-w32-addons-unload-function ()
-  (sr-unload-advice "^sr-w32-"))
+  (sr-ad-disable "^sr-w32-"))
 
 (provide 'sunrise-x-w32-addons)
 ;;; sunrise-x-w32-addons.el ends here

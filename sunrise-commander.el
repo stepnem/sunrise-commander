@@ -3909,13 +3909,9 @@ with advice matching REGEXP."
     (ad-disable-regexp regexp)
     (ad-update-regexp regexp)))
 
-(defun sr-unload-advice (regexp)
-  "Disable advice matching REGEXP and update affected function definitions."
-  (ad-disable-regexp regexp)
-  (ad-update-regexp regexp))
 
 (defun sunrise-commander-unload-function ()
-  (sr-unload-advice "^sr-advice-"))
+  (sr-ad-disable "^sr-advice-"))
 
 ;;; ============================================================================
 ;;; Font-Lock colors & styles:

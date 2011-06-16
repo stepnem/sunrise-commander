@@ -342,7 +342,7 @@ a loop scope."
                          sr-move-files)))
 
 (defun sunrise-x-loop-unload-function ()
-  (sr-unload-advice "^sr-loop-"))
+  (sr-ad-disable "^sr-loop-"))
 
 (sr-loop-engage)
 (provide 'sunrise-x-loop)

@@ -554,7 +554,7 @@ so they are always writeable by default."
 (add-hook 'find-file-hook 'sr-mirror-toggle-read-only)
 
 (defun sunrise-x-mirror-unload-function ()
-  (sr-unload-advice "^sr-mirror-"))
+  (sr-ad-disable "^sr-mirror-"))
 
 (provide 'sunrise-x-mirror)
 

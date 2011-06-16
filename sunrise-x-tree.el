@@ -1162,7 +1162,7 @@ switch to normal mode, then execute."
 (add-hook 'sr-start-hook 'sr-tree-menu-init)
 
 (defun sunrise-x-tree-unload-function ()
-  (sr-unload-advice "^sr-tree-"))
+  (sr-ad-disable "^sr-tree-"))
 
 ;;; ============================================================================
 ;;; Desktop support:

@@ -632,7 +632,7 @@ tabs in the Sunrise Commander (used for desktop support)."
                   '(sr-tabs-on . (sr-tabs-reset-state))))))
 
 (defun sunrise-x-tabs-unload-function ()
-  (sr-unload-advice "^sr-tabs-"))
+  (sr-ad-disable "^sr-tabs-"))
 
 (provide 'sunrise-x-tabs)
 
